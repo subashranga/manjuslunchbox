@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Break your overnight fast with these amazing, balanced and healthy south Indian breakfast dishes. These nutrient – dense breakfasts are made with real-foods and are amazing to fuel you up for the day.">
+<meta name="keywords" content="Breakfast, Lunch, Non Veg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Manjuslunchbox.in</title>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style type="text/css">
+    *{margin: 0; padding: 0;}
+    body, 
+    html{
+        color: #000000;
+        margin: 0px;
+        font-size: 14px;
+        font-family: 'Open Sans', arial, sans-serif;
+        height: 100%;
+        background-color: #ffffff;
+        line-height: 1.5;
+    }
+    #wrapper{
+        margin: 0px auto;
+        width: 80%;
+        min-height: 100%;
+    }
+    .menus {
+        position: relative;
+    }
+    .menus ul {
+        position: absolute;
+        top: 12px;
+        right: 4px;
+        z-index: 999;
+
+    }
+    .menus li {
+        display: inline;
+    }
+    .menus li a {
+        background-color: #4d474c;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 1.5;
+        padding: 5px 10px;
+        letter-spacing: 0.125em;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    .menus li a:hover {
+        background-color: #746171;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        background-size: cover;
+        position: relative;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .banner .contact-section {
+        background-color: rgba(245, 243, 245, 0.8);
+        position: absolute;
+        width: 40%;
+        right: 0px;
+        height: 100%;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .contact .contact-info {
+        width: 80%;
+    }
+    .contact .contact-info h2, 
+    .contact .contact-info .welcome-msg,
+    .contact .contact-info p,
+    .contact .contact-info .action {
+        text-align: center;
+    }
+    .contact-info h2 {
+        letter-spacing: 0.125em;
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        line-height: 1.25;
+        word-wrap: break-word;
+    }
+    .contact-info .welcome-msg {
+        color: #151515;
+        font-weight: 300;
+        font-size: 2.7rem;
+        font-family: 'Playfair Display', Georgia, serif;
+        letter-spacing: 0.023em;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    .contact-info p {
+        font-size: 1.1rem;
+        color: #575757;
+    }
+    .contact-info input {
+        margin-top: 24px;
+        background-color: #594a57;
+        color: #ffffff;
+        padding: 20px 32px;
+        font-weight: 700;;
+        letter-spacing: 0.214em;
+        border: 0px;
+        font-size: 1rem;
+
+    }
+    .contact-info input:hover {
+        background-color: #746171;
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .services {
+        width: auto;
+        margin: 0px -24px;
+    }
+    .custom-row {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .custom-row .card {
+        background-color: #f5f3f5;
+        margin: 0px 24px;
+        flex-direction: column;
+        display: flex;
+        width: calc(33.33% - 48px);
+    }
+    .custom-row .card img {
+        vertical-align: top;
+        width: 100%;
+    }
+    .custom-row .card h4 {
+        font-weight: 400;
+        text-align: center;
+        margin: 24px 0px;
+        letter-spacing: 0.99px;
+        color: #1b1b1b;
+        font-size: 1.5rem;
+    }
+    .custom-row .card p {
+        color: #5e5e5e;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+        text-align: center;
+        margin: 0px 32px 32px 32px;
+    }
+    .section-title {
+        color: #594a57;
+        letter-spacing: 0.125em;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .section-b-gab {
+        margin-bottom: 40px;
+    }
+    .section-title-b-gab {
+        margin-bottom: 32px;
+    }
+    .contact-info .contact-info-wrapper {
+        margin: 0px 20%;;
+    }
+    .contact-info h4 {
+        color: #1b1b1b;
+        line-height: 1.25;
+        letter-spacing: 0.045em;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+    .contact-info h4 a {
+        color: #1b1b1b;
+        text-decoration: underline;
+        word-wrap: break-word;
+    }
+    .contact-info h4 a:hover {
+        text-decoration: none;
+    }
+    .contact-info p {
+        color: #5e5e5e;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-6-m {
+        width: 60%;
+    }
+    .col-4-m {
+        width: 40%;
+    }
+    .col-3-m {
+        width: 33.33%;
+    }
+    .footer p {
+        letter-spacing: 0.083em;
+        color: #595959;
+        font-size: 0.9rem;
+    }
+    .footer .copy-right {
+        float: left;
+    }
+    .footer .company p {
+        text-align: right;
+        width: 100%;
+    }
+    .footer .inner-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .copy-right, .footer .company {
+        width: 50%;
+        padding: 32px 0px;
+        display: flex;
+    }
+ 
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+
+ #wrapper {
+        width: calc(100% - 48px);
+        margin: 0px 24px;
+    }
+    .col-6-m, .col-4-m {
+        width: 100%;
+        flex: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .custom-row {
+        flex-direction: column;
+    }
+    .custom-row .card {
+        width: 100%;
+        margin: 0px 0px 24px 0px;
+    }
+    .services {
+        margin: 0px;
+    }
+
+    .footer .inner-content {
+        flex-direction: column;
+    }
+
+    .footer .copy-right, .footer .company {
+        width: 100%;
+        padding: 16px 0px;
+    }
+    .footer .copy-right p, .footer .company p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner .contact-section {
+        position: static;
+        width: 100%;
+        padding: 10% 0px;
+    }
+
+    .contact-info .contact-info-wrapper {
+        margin: 0px;
+    }
+} 
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+    #wrapper {
+        width: 1024px;
+    }
+    .col-4-m {
+        width: 40%;
+    }
+}    
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="menus">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row banner section-b-gab">
+                <img src="images/banner.jpg" alt="Manju's lunchbox" />
+                <div class="contact-section">
+                    <div class="contact">
+                        <div class="contact-info">
+                            <h2>WELCOME TO</h2>
+                            <div class="welcome-msg">
+                                Manju's <br/>
+                                LUNCH BOX
+                            </div>
+                            <p>Get breakfast & lunch delivered at your office!</p>
+                            <div class="action"><a href="tel:+919841891803" title="call us"><input type="button" value="CONTACT"/></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="services" class="section-title section-title-b-gab">SERVICES</h2>
+            <div class="services section-b-gab">
+
+                <div class="custom-row">
+                    <div class="card">
+                        <img src="images/breakfast.jpg" alt="Breakfast"/>
+                        <h4>Breakfast</h4>
+                        <p>Break your overnight fast with these amazing, balanced and healthy south Indian breakfast dishes. These nutrient – dense breakfasts are made with real-foods and are amazing to fuel you up for the day.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/lunch.jpg" alt="Breakfast"/>
+                        <h4>Lunch</h4>
+                        <p>Its lunch time, time to open your lunch box which has been already delivered at your work place. These perfect special diet meals with veg poriyal, veg koottu, sambar, karakulambu & rasam make you feel the home made taste.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/non-veg.jpg" alt="Breakfast"/>
+                        <h4>Non Veg</h4>
+                        <p>In today's culture of unhealthy fast food, finding healthy non veg dishes can be difficult. we at lunch box 
+
+                            cook hygienic and delicious meat and sea food dishes that you will feel home made mother's touch.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="contact" class="contact-info">
+                <h2 class="section-title section-title-b-gab">CONTACT</h2>
+                <div class="contact-info-wrapper section-b-gab">
+                    <h4>Let's chat about food!</h4>
+                    <p>I know you're busy, but let's take some time to talk about what you'd like to be eating. Everyone's dietary needs and styles are unique. Drop us a line, and we can figure out what sort of a meal plan works for your goals and lifestyle!</p>
+                    <h4>MOBILE: <a href="tel:+919841891803" title="call us">+91 9841891803</a></h4>
+                    <h4> MAIL ID: <a href="mailto:manjuslunchbox.in@gmail.com" title="eMail us">manjuslunchbox.in@gmail.com</a></h4>
+                    <h4>WhatsApp: <a href="https://api.whatsapp.com/send?phone=9841891803&text=Manjus%2C%20LunchBox!" title="WhatsAppChat" target="_blank">Chat</a></h4>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="inner-content">
+                    <div class="copy-right">
+                        <p>COPYRIGHT &copy; 2023 MANJUSLUNCHBOX.IN - ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="company">
+                        <p>DESIGNS BY PIXELPANDA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
